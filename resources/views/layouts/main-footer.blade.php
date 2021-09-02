@@ -40,12 +40,12 @@
       <div class="row">
         <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
           <div
-            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            class="bg-image hover-overlay ripple shadow-1-strong "
             data-ripple-color="light"
           >
             <img
-              src="https://mdbootstrap.com/img/new/fluid/city/113.jpg"
-              class="w-100"
+              src="https://mdbootstrap.com/img/new/fluid/city/113.jpg "
+              class="w-100 rounded-3"
             />
             <a href="#!">
               <div

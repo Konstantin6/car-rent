@@ -10,7 +10,7 @@ Contacts
     <section class="my-5 m-0">
       <!-- Section heading -->
      
-      <div class="row">
+      <div class="row ">
         <!-- Grid column -->
         <div class="col-lg-6 mb-lg-0 mb-4">
           <!-- Form with header -->
@@ -31,45 +31,36 @@ Contacts
 @endif
 
 
-              <form action="{{route('contactUs.store')}}" method="POST" name="contact-form">
+            <form action="{{route('contactUs.store')}}" method="POST" name="contact-form">
               <div class="md-form input-group flex-nowrap mb-3 shadow-sm">
-                <div class="input-group-prepend">
-                    <i class="fas fa-instagram "></i>
-                </div>
+                
                 <input type="text" id="name" name="name" required="required" class="form-control text-secondary" placeholder="Numele"required>
               </div>
               @error('name')
                  <div class="alert alert-danger">{{ $message }}</div>
                    @enderror
               <div class="md-form input-group flex-nowrap mb-3 shadow-sm">
-                <div class="input-group-prepend">
-                    <i class="fa fa-envelope prefix text-white"></i>
-                </div>
+                
                 <input type="text" id="email" name="email" required="required" class="form-control text-secondary" placeholder="Your email" required="required">
               </div>
               @error('email')
              <div class="alert alert-danger">{{ $message }}</div>
               @enderror
               <div class="md-form input-group flex-nowrap mb-3 shadow-sm">
-                <div class="input-group-prepend">
-                    <i class="fa fa-tag prefix text-white"></i>
-                </div>
+                
                 <input type="text" id="subject" required="required" name="subject" class="form-control text-secondary" placeholder="Subject"required>
               </div>
               @error('subject')
                 <div class="alert alert-danger">{{ $message }}</div>
               @enderror
               <div class="md-form input-group flex-nowrap mb-3 shadow-sm">
-                <div class="input-group-prepend">
-                    <i class="fas fa-pencil-alt prefix text-white"></i>
-                </div>
+                
                 <textarea id="text" name="text" required="required"class="form-control md-textarea text-secondary" rows="3" required="required"placeholder="Write message"></textarea>
               </div>
               @error('text')
               <div class="alert alert-danger">{{ $message }}</div>
               @enderror
-              <label class="md-form input-group flex-nowrap mb-3 shadow-sm" required="required" for="cars">Choose a car:</label>
-             <select id="cars" name="department" class="required">
+             <select id="department" name="department" required="required" class="border border-1 w-100 ">
             <option selected=""disabled="disabled" value=""> Please Select </option>
            <option value="authentification">I have some problems with authentification</option>
            <option value="connection">Problems with Connection</option>
@@ -95,6 +86,7 @@ Contacts
               </div>
             </div>
             </form>
+          </div>
           </div><!-- Form with header -->
         </div>
 <!-- Grid column -->

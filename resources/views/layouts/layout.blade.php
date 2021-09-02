@@ -7,13 +7,19 @@
 
     <!-- Bootstrap CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- Font Awesome -->
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
   rel="stylesheet"
 />
+<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/owl.css">
 
 
     <title></title>
@@ -30,7 +36,12 @@
 
 
 <script src="/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+
+    <!-- Additional Scripts -->
+    
 </body>
 </html>
 

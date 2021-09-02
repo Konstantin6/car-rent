@@ -15,7 +15,6 @@ class CreateRequestsTable extends Migration
     {
         Schema::create('requests', function (Blueprint $table) {
             $table->id();
-            $table->integer('request_id');
             $table->integer('customer_id');
             $table->integer('car_id');
             $table->timestamps();

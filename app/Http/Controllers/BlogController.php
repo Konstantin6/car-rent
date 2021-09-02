@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Article;
+use App\Models\Author;
+use App\Models\Rubric;
 
 class BlogController extends Controller
 {
-    private $articles;
+   /* private $articles;
     public function __construct(){
         $this->articles=[
         
@@ -47,13 +50,17 @@ class BlogController extends Controller
             
 
         ];
-    }
+    }*/
     public function index(){
-        return view ('pages.blog-list',['articles'=>$this->articles]);
-    }
-    public function show(int $articleId){
+        $articles=Article::with('rubric','author')->orderBy('created_at','desc')->get();
+      // dd(Article::all()->toArray());
 
-        $article=null;
+        
+        return view ('pages.blog-list',compact('articles'));
+    }
+    public function show(int $id){
+        $article=Article::where('id',$id)->first();
+        /*$article=null;
         foreach($this->articles as $articleItem){
             if($articleItem['id']===$articleId){
                 $article=$articleItem;
@@ -61,8 +68,8 @@ class BlogController extends Controller
         }
         if(!$article){
             abort(404);
-        }
-        return view ('pages.m-article',['article'=>$article]);
+        }*/
+        return view ('pages.m-article',compact('article'));
 
 
     }
