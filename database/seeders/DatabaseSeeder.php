@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
      $this->call([
            RubricSeeder::class
         ]);
-*/
+
        $this->call([
            ArticleSeeder::class
         ]);/*
@@ -32,5 +32,12 @@ class DatabaseSeeder extends Seeder
          $this->call([
             CommentSeeder::class
          ]);*/
+        // \App\Models\Owner::factory(20)->create();
+         // \App\Models\Customer::factory(21)->create();
+         // \App\Models\Car::factory(21)->create();
+         // \App\Models\CarCharacteristic::factory(21)->create();
+         \App\Models\Request::factory(21)->create();
+        
+        
     }
 }

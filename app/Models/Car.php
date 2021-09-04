@@ -13,7 +13,7 @@ class Car extends Model
 
     protected $fillable =[
         'car_name',
-        'price_by_hour'
+        
     ];
     public function requests(){
         return $this->hasMany(Request::class);
